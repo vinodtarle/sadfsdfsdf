@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".payment.view.FragmentPaymentAdd">
+
+    <data>
+
+        <variable
+            name="payment"
+            type="com.construction.app.payment.model.Payment" />
+    </data>
+
+    <ScrollView style="@style/LayoutMatchParent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutMain"
+            style="@style/LayoutSection"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing3x">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPaymentFor"
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_home" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutPaymentFor"
+                    style="@style/ExposedDropdownMenu"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:hint="@string/hintSelectUser">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/paymentFor"
+                        style="@style/TextInputEditText"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_calender" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutDate"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edDate"
+                        style="@style/TextInputEditText"
+                        android:focusable="false"
+                        android:hint="@string/hintDate"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:text="@={payment.date}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_site" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutAmount"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxAmount">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edAmount"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintPaymentAmount"
+                        android:inputType="numberDecimal"
+                        android:maxLength="@string/limitMaxAmount"
+                        android:singleLine="true"
+                        android:text="@={payment.amount}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RadioGroup
+                android:id="@+id/rgPaymentStatus"
+                style="@style/LayoutSection"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="@dimen/spacingHalf"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbReceived"
+                    style="@style/LayoutWrapContent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/strReceived"
+                    android:textColor="@color/colorTextLite" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbSend"
+                    style="@style/LayoutWrapContent"
+                    android:layout_weight="1"
+                    android:text="@string/strSend"
+                    android:textColor="@color/colorTextLite" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgPaymentType"
+                style="@style/LayoutSection"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="@dimen/spacingHalf"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbCash"
+                    style="@style/LayoutWrapContent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/strCash"
+                    android:textColor="@color/colorTextLite" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbCheque"
+                    style="@style/LayoutWrapContent"
+                    android:layout_weight="1"
+                    android:text="@string/strCheque"
+                    android:textColor="@color/colorTextLite" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbOnline"
+                    style="@style/LayoutWrapContent"
+                    android:layout_weight="1"
+                    android:text="@string/strOnline"
+                    android:textColor="@color/colorTextLite" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_description" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutDescription"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxDescription">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edDescription"
+                        style="@style/TextInputEditText.Area"
+                        android:gravity="top"
+                        android:hint="@string/hintDescription"
+                        android:inputType="textMultiLine|textCapWords"
+                        android:text="@={payment.description}"
+                        android:textColor="@color/colorTextLite"
+                        app:counterMaxLength="@string/limitMaxDescription" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.construction.app.base.utility.button.ActionButton
+                android:id="@+id/buttonAdd"
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing7x"
+                android:text="@string/buttonAdd"
+                app:actionButtonType="MediumEmphasis" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

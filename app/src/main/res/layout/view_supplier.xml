@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="supplier"
+            type="com.construction.app.supplier.model.Supplier" />
+    </data>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSection"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/spacing2x"
+        android:paddingTop="@dimen/spacing1x"
+        android:paddingEnd="@dimen/spacing2x"
+        android:paddingBottom="@dimen/spacing1x">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextLeading"
+            android:text="@{supplier.name}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/FinePrint"
+            android:layout_weight="1"
+            android:text="@{supplier.contact}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/FinePrintSubtle"
+            android:text="@{supplier.address}" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

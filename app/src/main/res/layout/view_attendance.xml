@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="attendance"
+            type="com.construction.app.attendance.model.Attendance" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/spacing3x"
+            android:paddingTop="@dimen/spacing1x"
+            android:paddingEnd="@dimen/spacing3x"
+            android:paddingBottom="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextBody"
+                android:text="@{attendance.labour.name}" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FinePrint"
+                android:layout_weight="1"
+                android:text="@{attendance.labour.contact}" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FinePrint"
+                android:text="@{attendance.site.name}" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View style="@style/ViewHorizontal" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

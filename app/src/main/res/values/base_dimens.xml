@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing  -->
+    <dimen name="spacingHalf">4dp</dimen>
+    <dimen name="spacing1x">8dp</dimen>
+    <dimen name="spacing1nHalf">12dp</dimen>
+    <dimen name="spacing2x">16dp</dimen>
+    <dimen name="spacing3x">24dp</dimen>
+    <dimen name="spacing4x">32dp</dimen>
+    <dimen name="spacing5x">40dp</dimen>
+    <dimen name="spacing7x">56dp</dimen>
+    <dimen name="spacing10x">80dp</dimen>
+    <dimen name="spacing15x">120dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_32">32sp</dimen>
+    <dimen name="text_40">40sp</dimen>
+
+    <!-- Button Dimensions -->
+    <dimen name="buttonBorderWidth">1dp</dimen>
+    <dimen name="buttonRadius">3dp</dimen>
+    <dimen name="buttonMinWidthText">48dp</dimen>
+    <dimen name="buttonMinHeightText">48dp</dimen>
+    <dimen name="buttonMinWidthLowEmphasis">140dp</dimen>
+    <dimen name="buttonMinHeightLowEmphasis">52dp</dimen>
+    <dimen name="buttonMinWidthHighEmphasis">140dp</dimen>
+    <dimen name="buttonMinHeightHighEmphasis">52dp</dimen>
+
+    <!-- Shadows/Elevations -->
+    <dimen name="shadow01">1dp</dimen>
+    <dimen name="shadow02">2dp</dimen>
+    <dimen name="shadow03">3dp</dimen>
+    <dimen name="shadow04">4dp</dimen>
+    <dimen name="shadow06">6dp</dimen>
+    <dimen name="shadow08">8dp</dimen>
+    <dimen name="shadow12">12dp</dimen>
+    <dimen name="shadow16">16dp</dimen>
+    <dimen name="shadow24">24dp</dimen>
+
+    <!-- Other  -->
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+</resources>

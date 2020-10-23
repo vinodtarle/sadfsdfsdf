@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/optionAddItem"
+        android:icon="@drawable/ic_add"
+        android:title="@string/optionAddItem" />
+    <item
+        android:id="@+id/optionAddUnit"
+        android:icon="@drawable/ic_add"
+        android:title="@string/optionAddUnit" />
+    <item
+        android:id="@+id/optionLogout"
+        android:icon="@drawable/ic_clear"
+        android:title="@string/optionLogout" />
+</menu>

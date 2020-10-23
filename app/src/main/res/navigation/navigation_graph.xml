@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.construction.app.base.view.BaseFragment"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/fragmentSignIn"
+        android:name="com.construction.app.auth.view.ActivitySignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.construction.app.base.view.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/toFragmentLabour"
+            app:destination="@id/fragmentLabour" />
+
+        <action
+            android:id="@+id/toFragmentMaterial"
+            app:destination="@id/fragmentMaterial" />
+
+        <action
+            android:id="@+id/toFragmentPayment"
+            app:destination="@id/fragmentPayment" />
+
+        <action
+            android:id="@+id/toFragmentSite"
+            app:destination="@id/fragmentSite" />
+
+        <action
+            android:id="@+id/toFragmentSupplier"
+            app:destination="@id/fragmentSupplier" />
+
+        <action
+            android:id="@+id/toFragmentAttendance"
+            app:destination="@id/fragmentAttendance" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAttendance"
+        android:name="com.construction.app.attendance.view.FragmentAttendance"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance">
+
+        <action
+            android:id="@+id/toFragmentAttendanceAdd"
+            app:destination="@id/fragmentAttendanceAdd" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAttendanceAdd"
+        android:name="com.construction.app.attendance.view.FragmentAttendanceAdd"
+        android:label="FragmentAttendanceAdd" />
+
+    <fragment
+        android:id="@+id/fragmentLabour"
+        android:name="com.construction.app.labour.view.FragmentLabour"
+        android:label="fragment_labour"
+        tools:layout="@layout/fragment_labour">
+
+        <action
+            android:id="@+id/toFragmentLabourAdd"
+            app:destination="@id/fragmentLabourAdd" />
+
+        <action
+            android:id="@+id/toFragmentLabourDetails"
+            app:destination="@id/fragmentLabourDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentLabourAdd"
+        android:name="com.construction.app.labour.view.FragmentLabourAdd"
+        android:label="fragment_labour_add"
+        tools:layout="@layout/fragment_labour_add" />
+
+    <fragment
+        android:id="@+id/fragmentLabourDetails"
+        android:name="com.construction.app.labour.view.FragmentLabourDetails"
+        android:label="fragment_labour_details"
+        tools:layout="@layout/fragment_labour_details" />
+
+    <fragment
+        android:id="@+id/fragmentMaterial"
+        android:name="com.construction.app.material.view.FragmentMaterial"
+        android:label="fragment_material"
+        tools:layout="@layout/fragment_material">
+
+        <action
+            android:id="@+id/toFragmentMaterialAdd"
+            app:destination="@id/fragmentMaterialAdd" />
+
+        <action
+            android:id="@+id/toFragmentMaterialDetails"
+            app:destination="@id/fragmentMaterialDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentMaterialAdd"
+        android:name="com.construction.app.material.view.FragmentMaterialAdd"
+        android:label="fragment_material_add"
+        tools:layout="@layout/fragment_material_add" />
+
+    <fragment
+        android:id="@+id/fragmentMaterialDetails"
+        android:name="com.construction.app.material.view.FragmentMaterialDetails"
+        android:label="fragment_material_details"
+        tools:layout="@layout/fragment_material_details" />
+
+    <fragment
+        android:id="@+id/fragmentPayment"
+        android:name="com.construction.app.payment.view.FragmentPayment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment">
+
+        <action
+            android:id="@+id/toFragmentPaymentAdd"
+            app:destination="@id/fragmentPaymentAdd" />
+
+        <action
+            android:id="@+id/toFragmentPaymentDetails"
+            app:destination="@id/fragmentPaymentDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentPaymentAdd"
+        android:name="com.construction.app.payment.view.FragmentPaymentAdd"
+        android:label="fragment_payment_add"
+        tools:layout="@layout/fragment_payment_add" />
+
+    <fragment
+        android:id="@+id/fragmentPaymentDetails"
+        android:name="com.construction.app.payment.view.FragmentPaymentDetails"
+        android:label="fragment_payment_details"
+        tools:layout="@layout/fragment_payment_details" />
+
+    <fragment
+        android:id="@+id/fragmentSite"
+        android:name="com.construction.app.site.view.FragmentSite"
+        android:label="fragment_site"
+        tools:layout="@layout/fragment_site">
+
+        <action
+            android:id="@+id/toFragmentSiteAdd"
+            app:destination="@id/fragmentSiteAdd" />
+
+        <action
+            android:id="@+id/toFragmentSiteDetails"
+            app:destination="@id/fragmentSiteDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSiteAdd"
+        android:name="com.construction.app.site.view.FragmentSiteAdd"
+        android:label="fragment_site_add"
+        tools:layout="@layout/fragment_site_add" />
+
+    <fragment
+        android:id="@+id/fragmentSiteDetails"
+        android:name="com.construction.app.site.view.FragmentSiteDetails"
+        android:label="fragment_site_details"
+        tools:layout="@layout/fragment_site_details" />
+
+    <fragment
+        android:id="@+id/fragmentSupplier"
+        android:name="com.construction.app.supplier.view.FragmentSupplier"
+        android:label="fragment_supplier"
+        tools:layout="@layout/fragment_supplier">
+
+        <action
+            android:id="@+id/toFragmentSupplierAdd"
+            app:destination="@id/fragmentSupplierAdd" />
+
+        <action
+            android:id="@+id/toFragmentSupplierDetails"
+            app:destination="@id/fragmentSupplierDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSupplierAdd"
+        android:name="com.construction.app.supplier.view.FragmentSupplierAdd"
+        android:label="fragment_supplier_add"
+        tools:layout="@layout/fragment_supplier_add" />
+
+    <fragment
+        android:id="@+id/fragmentSupplierDetails"
+        android:name="com.construction.app.supplier.view.FragmentSupplierDetails"
+        android:label="fragment_supplier_details"
+        tools:layout="@layout/fragment_supplier_details" />
+
+    <fragment
+        android:id="@+id/fragmentItem"
+        android:name="com.construction.app.item.view.FragmentItem"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@+id/fragmentItemAdd"
+        android:name="com.construction.app.item.view.FragmentItemAdd"
+        android:label="fragment_item_add"
+        tools:layout="@layout/fragment_item_add" />
+
+    <fragment
+        android:id="@+id/fragmentUnit"
+        android:name="com.construction.app.unit.view.FragmentUnit"
+        android:label="fragment_unit"
+        tools:layout="@layout/fragment_unit" />
+
+    <fragment
+        android:id="@+id/fragmentUnitAdd"
+        android:name="com.construction.app.unit.view.FragmentUnitAdd"
+        android:label="fragment_unit_add"
+        tools:layout="@layout/fragment_unit_add" />
+
+    <fragment
+        android:id="@+id/fragmentUnitDetails"
+        android:name="com.construction.app.unit.view.FragmentUnitDetails"
+        android:label="fragment_unit_details"
+        tools:layout="@layout/fragment_unit_details" />
+
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.construction.app.report.view.FragmentDetails"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="landing_image_min">250dp</dimen>
+    <dimen name="ImageView">28dp</dimen>
+    <dimen name="editTextArea">120dp</dimen>
+    <dimen name="dropDownMinHeight">48dp</dimen>
+    <dimen name="recyclerViewPadding">120dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,107 @@
+<resources>
+
+    <style name="LayoutWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutMatchParent.Padding">
+        <item name="android:paddingStart">@dimen/spacing3x</item>
+        <item name="android:paddingTop">@dimen/spacing2x</item>
+        <item name="android:paddingEnd">@dimen/spacing3x</item>
+        <item name="android:paddingBottom">@dimen/spacing2x</item>
+    </style>
+
+    <style name="LayoutSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutSection.Padding">
+        <item name="android:padding">@dimen/spacing3x</item>
+    </style>
+
+    <style name="LayoutSelection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundColor">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="RecyclerView" parent="LayoutMatchParent" />
+
+    <style name="RecyclerView.Padding" parent="LayoutMatchParent">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingBottom">@dimen/recyclerViewPadding</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="LayoutWrapContent">
+        <item name="android:layout_marginEnd">@dimen/spacing2x</item>
+        <item name="android:layout_marginBottom">@dimen/spacing2x</item>
+    </style>
+
+    <style name="ViewHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/one_dp</item>
+    </style>
+
+    <style name="ViewVertical">
+        <item name="android:layout_width">@dimen/one_dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="SurfaceBase">
+        <item name="android:background">@color/materialBase</item>
+    </style>
+
+    <style name="Surface01">
+        <item name="android:background">@color/materialBase01</item>
+        <item name="android:elevation">@dimen/shadow01</item>
+    </style>
+
+    <style name="Surface02">
+        <item name="android:background">@color/materialBase02</item>
+        <item name="android:elevation">@dimen/shadow02</item>
+    </style>
+
+    <style name="Surface03">
+        <item name="android:background">@color/materialBase03</item>
+        <item name="android:elevation">@dimen/shadow03</item>
+    </style>
+
+    <style name="Surface04">
+        <item name="android:background">@color/materialBase04</item>
+        <item name="android:elevation">@dimen/shadow04</item>
+    </style>
+
+    <style name="Surface06">
+        <item name="android:background">@color/materialBase06</item>
+        <item name="android:elevation">@dimen/shadow06</item>
+    </style>
+
+    <style name="Surface08">
+        <item name="android:background">@color/materialBase08</item>
+        <item name="android:elevation">@dimen/shadow08</item>
+    </style>
+
+    <style name="Surface12">
+        <item name="android:background">@color/materialBase12</item>
+        <item name="android:elevation">@dimen/shadow12</item>
+    </style>
+
+    <style name="Surface16">
+        <item name="android:background">@color/materialBase16</item>
+        <item name="android:elevation">@dimen/shadow16</item>
+    </style>
+
+    <style name="Surface24">
+        <item name="android:background">@color/materialBase24</item>
+        <item name="android:elevation">@dimen/shadow24</item>
+    </style>
+</resources>

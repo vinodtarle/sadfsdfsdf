@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Button Dimensions-->
+    <dimen name="buttonMinWidthHighEmphasis">180dp</dimen>
+    <dimen name="buttonMinWidthMediumEmphasis">180dp</dimen>
+</resources>

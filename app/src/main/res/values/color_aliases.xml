@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Text Aliases    -->
+    <color name="textPrimary">@color/midnight</color>
+    <color name="textSecondary">@color/charcoal</color>
+    <color name="textTertiary">@color/ash</color>
+    <color name="textInvertedPrimary">@color/lunar</color>
+    <color name="textInvertedSecondary">@color/pearl</color>
+    <color name="textInvertedTertiary">@color/sterling</color>
+    <color name="textError">@color/crimson</color>
+    <color name="textSuccess">@color/shamrock</color>
+
+    <!--    Foreground Colors   -->
+    <color name="interactiveForegroundNormal">@color/azure</color>
+    <color name="interactiveForegroundActive">@color/navy</color>
+    <color name="interactiveForegroundDisabled">@color/azure_t40</color>
+    <color name="interactiveInverseForegroundNormal">@color/white</color>
+    <color name="destructiveForegroundNormal">@color/crimson</color>
+    <color name="destructiveForegroundActive">@color/pinot</color>
+    <color name="destructiveForegroundDisabled">@color/crimson_t40</color>
+
+    <!--    Background Colors   -->
+    <color name="interactiveInverseBackgroundNormal">@color/azure</color>
+    <color name="interactiveInverseBackgroundActive">@color/navy</color>
+    <color name="interactiveInverseBackgroundDisabled">@color/azure_t40</color>
+    <color name="interactiveBackgroundNormal">@color/white</color>
+    <color name="interactiveBackgroundActive">@color/azure_t16</color>
+    <color name="interactiveBackgroundDisabled">@color/white_t40</color>
+    <color name="destructiveInverseBackgroundNormal">@color/crimson</color>
+    <color name="destructiveInverseBackgroundActive">@color/pinot</color>
+    <color name="destructiveInverseBackgroundDisabled">@color/crimson_t40</color>
+    <color name="destructiveBackgroundActive">@color/crimson_t12</color>
+
+    <!--    Material Color Aliases  -->
+    <color name="materialBase">@color/white</color>
+    <color name="materialBase01">@color/white</color>
+    <color name="materialBase02">@color/white</color>
+    <color name="materialBase03">@color/white</color>
+    <color name="materialBase04">@color/white</color>
+    <color name="materialBase06">@color/white</color>
+    <color name="materialBase08">@color/white</color>
+    <color name="materialBase12">@color/white</color>
+    <color name="materialBase16">@color/white</color>
+    <color name="materialBase24">@color/white</color>
+</resources>

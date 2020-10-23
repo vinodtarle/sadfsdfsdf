@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".labour.view.FragmentLabourAdd">
+
+    <data>
+
+        <variable
+            name="labour"
+            type="com.construction.app.labour.model.Labour" />
+    </data>
+
+    <ScrollView style="@style/LayoutMatchParent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutMain"
+            style="@style/LayoutSection"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing3x">
+
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/LayoutSection">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_person" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutName"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxLabourName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edName"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintLabourName"
+                        android:inputType="textCapWords"
+                        android:maxLength="@string/limitMaxLabourName"
+                        android:singleLine="true"
+                        android:text="@={labour.name}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutContact"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxContactNumber">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edContact"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintContactNumber"
+                        android:inputType="number"
+                        android:maxLength="@string/limitMaxContactNumber"
+                        android:singleLine="true"
+                        android:text="@={labour.contact}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_rupee" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutRate"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxRate">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edRate"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintRate"
+                        android:inputType="numberDecimal"
+                        android:maxLength="@string/limitMaxRate"
+                        android:singleLine="true"
+                        android:text="@={labour.rate}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_receipt" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutRateType"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:layout_weight="1"
+                    android:hint="@string/rateOf">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/rateType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_location" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutAddress"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxLabourAddress">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edAddress"
+                        style="@style/TextInputEditText.Area"
+                        android:gravity="top"
+                        android:hint="@string/hintLabourAddress"
+                        android:inputType="textMultiLine|textCapWords"
+                        android:maxLength="@string/limitMaxLabourAddress"
+                        android:text="@={labour.address}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.construction.app.base.utility.button.ActionButton
+                android:id="@+id/buttonAdd"
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing7x"
+                android:text="@string/buttonAdd"
+                app:actionButtonType="MediumEmphasis" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

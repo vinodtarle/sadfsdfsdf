@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".site.view.FragmentSiteAdd">
+
+    <data>
+
+        <variable
+            name="site"
+            type="com.construction.app.site.model.Site" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutMain"
+            style="@style/LayoutSection"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing3x">
+
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/LayoutSection">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_site"
+                    app:tint="@color/iconLite" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutName"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxSiteName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edName"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintSiteName"
+                        android:inputType="textCapWords"
+                        android:maxLength="@string/limitMaxSiteName"
+                        android:singleLine="true"
+                        android:text="@={site.name}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutContact"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edContact"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintContactNumber"
+                        android:inputType="number"
+                        android:maxLength="@string/limitMaxContactNumber"
+                        android:singleLine="true"
+                        android:text="@={site.contact}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_location" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutAddress"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxSiteAddress">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edAddress"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintSiteAddress"
+                        android:inputType="textPostalAddress"
+                        android:maxLength="@string/limitMaxSiteAddress"
+                        android:singleLine="true"
+                        android:text="@={site.address}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_home" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutSiteType"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:hint="@string/siteType">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/siteType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_calender" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutStartDate"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edStartDate"
+                        style="@style/TextInputEditText"
+                        android:focusable="false"
+                        android:hint="@string/hintStartDate"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:text="@={site.startDate}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutDeliveryDate"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edDeliveryDate"
+                        style="@style/TextInputEditText"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:hint="@string/hintDeliveryDate"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:text="@={site.deliveryDate}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_rupee" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutRate"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@string/limitMaxRate">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edRate"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hintRate"
+                        android:inputType="numberDecimal"
+                        android:maxLength="@string/limitMaxRate"
+                        android:singleLine="true"
+                        android:text="@={site.rate}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_receipt" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutRateType"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:layout_weight="1"
+                    android:hint="@string/rateOf">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/rateType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.construction.app.base.utility.button.ActionButton
+                android:id="@+id/buttonAdd"
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing7x"
+                android:text="@string/buttonAdd"
+                app:actionButtonType="MediumEmphasis" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

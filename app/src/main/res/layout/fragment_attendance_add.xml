@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".attendance.view.FragmentAttendanceAdd">
+
+    <data>
+
+        <variable
+            name="attendance"
+            type="com.construction.app.attendance.model.Attendance" />
+    </data>
+
+    <ScrollView
+        style="@style/TextInputLayout"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutMain"
+            style="@style/LayoutSection"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing3x">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_calender" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutDate"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edDate"
+                        style="@style/TextInputEditText"
+                        android:focusable="false"
+                        android:hint="@string/attendanceDate"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:text="@={attendance.date}"
+                        android:textColor="@color/colorTextLite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_person" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutItem"
+                    style="@style/ExposedDropdownMenu"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:hint="@string/hintSelectLabour">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/labour"
+                        style="@style/TextInputEditText"
+                        android:editable="false"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RadioGroup
+                android:id="@+id/rgDayType"
+                style="@style/LayoutSection"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbFullDay"
+                    style="@style/LayoutWrapContent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/strFullDay"
+                    android:textColor="@color/colorTextLite" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbHalfDay"
+                    style="@style/LayoutWrapContent"
+                    android:layout_weight="1"
+                    android:text="@string/strHalfDay"
+                    android:textColor="@color/colorTextLite" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_home" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutSite"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    android:hint="@string/hintSelectSite">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/site"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.construction.app.base.utility.button.ActionButton
+                android:id="@+id/buttonAdd"
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing7x"
+                android:text="@string/buttonAdd"
+                app:actionButtonType="MediumEmphasis" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

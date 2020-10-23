@@ -1,0 +1,386 @@
+<resources>
+    <string name="app_name">My Construction</string>
+
+    <!--Success message-->
+    <string name="successAdd">Successfully save.</string>
+    <string name="successUpdate">Successfully update.</string>
+    <string name="successDelete">Successfully delete.</string>
+    <string name="successWritten">Document successfully written!</string>
+    <string name="successUpdated">Document successfully updated!</string>
+    <string name="successDeleted">Document successfully deleted!</string>
+
+    <!--Error message-->
+    <string name="errorAdd">Enable to save, Try again.</string>
+    <string name="errorUpdate">Enable to update, Try again.</string>
+    <string name="errorDelete">Enable to delete, Try again.</string>
+    <string name="errorLoad">Enable to load, Try again.</string>
+    <string name="errorNotFound">No data found</string>
+    <string name="errorListenFailed">Listen failed.</string>
+    <string name="errorWritten">Error writing document</string>
+    <string name="errorUpdating">Error updating document</string>
+    <string name="errorDeleting">Error deleting document</string>
+
+    <!--Button label-->
+    <string name="buttonAdd">ADD</string>
+    <string name="buttonEdit">EDIT</string>
+    <string name="buttonUpdate">UPDATE</string>
+    <string name="buttonDelete">DELETE</string>
+    <string name="buttonSave">SAVE</string>
+    <string name="buttonRemove">REMOVE</string>
+    <string name="buttonYes">Yes</string>
+    <string name="buttonNo">No</string>
+    <string name="buttonSubmit">Submit</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="buttonNext">Next</string>
+    <string name="buttonBack">Back</string>
+
+    <!--Splash Screen-->
+    <string name="strFrom">From</string>
+    <string name="strOwnerName">My Construction</string>
+
+    <!--Activity label-->
+    <string name="titleLogin">Login In</string>
+    <string name="titleSignIn">Sign In</string>
+    <string name="titleLogOut">Log out</string>
+    <string name="titleItemAdd">Add Item</string>
+    <string name="titleUnitAdd">Add Unit</string>
+
+    <!--Option Menu-->
+    <string name="optionAddItem">Add Item</string>
+    <string name="optionAddUnit">Add Unit</string>
+    <string name="optionLogout">Logout</string>
+
+    <!--String-->
+    <string name="strFullDay">Full Day</string>
+    <string name="strHalfDay">Half Day</string>
+    <string name="strReceived">Received</string>
+    <string name="strSend">Send</string>
+    <string name="strCash">Cash</string>
+    <string name="strCheque">Cheque</string>
+    <string name="strOnline">Online</string>
+    <string name="strDate">Date</string>
+    <string name="strAmount">Amount</string>
+    <string name="strDescription">Description</string>
+    <string name="strDetails">Details</string>
+    <string name="msgTotalExpense">Total expense</string>
+
+    <!--Contact details-->
+    <string name="limitMaxContactNumber">10</string>
+    <string name="hintContactNumber">Contact number</string>
+
+    <!-- Fragment Main   -->
+    <string name="strSite">Site</string>
+    <string name="strPayment">Payment</string>
+    <string name="strSupplier">Supplier</string>
+    <string name="strMaterial">Material</string>
+    <string name="strLabour">Labour</string>
+    <string name="strAttendance">Attendance</string>
+
+    <!-- Item -->
+    <string name="txtItem">Item</string>
+    <string name="hintSelectItem">Select item</string>
+    <string name="limitMaxItem">25</string>
+    <string name="hintItemName">Item name</string>
+    <string name="errorSelectItem">Select item.</string>
+
+    <!-- unit -->
+    <string name="txtUnit">Unit</string>
+    <string name="hintSelectUnit">Select unit</string>
+    <string name="limitMaxUnit">25</string>
+    <string name="hintUnitName">Unit name</string>
+    <string name="errorSelectUnit">Select unit.</string>
+
+    <!--Site-->
+    <string name="titleSite">Site</string>
+    <string name="titleSiteAdd">Add Site</string>
+    <string name="titleSiteDetails">Site Details</string>
+    <string name="limitMaxSiteName">25</string>
+    <string name="hintSiteName">Site name</string>
+    <string name="hintSiteAddress">Site address</string>
+    <string name="limitMaxSiteAddress">150</string>
+    <string name="siteType">Site Type</string>
+    <string name="hintStartDate">Start date</string>
+    <string name="hintDeliveryDate">Delivery date</string>
+    <string name="limitMaxRate">8</string>
+    <string name="hintRate">Rate</string>
+    <string name="rateOf">Rate of</string>
+
+    <!--Payment-->
+    <string name="titlePayment">Payment</string>
+    <string name="titlePaymentAdd">Add Payment</string>
+    <string name="titlePaymentDetails">Payment Details</string>
+    <string name="hintSelectUser">Select user</string>
+    <string name="hintDate">Date</string>
+    <string name="hintPaymentAmount">Amount</string>
+    <string name="limitMaxAmount">8</string>
+    <string name="hintDescription">Description</string>
+    <string name="limitMaxDescription">150</string>
+
+    <!--Supplier-->
+    <string name="hintSupplierName">Supplier name</string>
+    <string name="limitMaxSupplierName">25</string>
+    <string name="hintSupplierAddress">Supplier address</string>
+    <string name="limitMaxSupplierAddress">150</string>
+    <string name="titleSupplier">Supplier</string>
+    <string name="titleSupplierAdd">Add Supplier</string>
+    <string name="titleSupplierDetails">Supplier Details</string>
+
+    <!--Material-->
+    <string name="titleMaterial">Material</string>
+    <string name="titleMaterialAdd">Add Material</string>
+    <string name="titleMaterialDetails">Material Details</string>
+    <string name="purchaseDate">Purchase date</string>
+    <string name="hintQuantity">Quantity</string>
+    <string name="limitQuantity">5</string>
+    <string name="hintSelectSupplier">Select supplier</string>
+    <string name="hintSelectSite">Select site</string>
+
+    <!--Labour-->
+    <string name="titleLabour">Labour</string>
+    <string name="titleLabourAdd">Add Labour</string>
+    <string name="titleLabourDetails">Labour Details</string>
+    <string name="hintLabourName">Labour name</string>
+    <string name="limitMaxLabourName">25</string>
+    <string name="hintLabourAddress">Labour address</string>
+    <string name="limitMaxLabourAddress">150</string>
+
+    <!--Attendance-->
+    <string name="titleAttendance">Attendance</string>
+    <string name="titleAttendanceAdd">Attendance Add</string>
+    <string name="titleAttendanceDetails">Attendance Details</string>
+    <string name="attendanceDate">Attendance date</string>
+    <string name="hintSelectLabour">Select labour</string>
+
+    <!-- Data access key -->
+    <string name="keyA">a</string>
+    <string name="keyActivities">activities</string>
+    <string name="keyAlert">alert</string>
+
+    <string name="keyB">b</string>
+
+    <string name="keyC">c</string>
+    <string name="keyChatId">chatId</string>
+    <string name="keyComplaint">complaint</string>
+
+    <string name="keyD">d</string>
+    <string name="keyDescription">description</string>
+    <string name="keyDiary">diary</string>
+
+    <string name="keyE">e</string>
+    <string name="keyEvent">event</string>
+    <string name="keyF">f</string>
+    <string name="keyG">g</string>
+    <string name="keyH">h</string>
+
+    <string name="keyI">i</string>
+    <string name="keyIssue">issue</string>
+
+    <string name="keyJ">j</string>
+    <string name="keyK">k</string>
+
+    <string name="keyL">l</string>
+    <string name="keyLeave">leave</string>
+
+    <string name="keyM">m</string>
+    <string name="keyMeeting">meeting</string>
+    <string name="keyModule">module</string>
+    <string name="keyModuleNumber">moduleNumber</string>
+
+    <string name="keyN">n</string>
+    <string name="keyNotice">notice</string>
+    <string name="keyO">o</string>
+    <string name="keyP">p</string>
+    <string name="keyQ">q</string>
+
+    <string name="keyR">r</string>
+    <string name="keyRoute">route</string>
+
+    <string name="keyS">w</string>
+    <string name="keySetting">setting</string>
+    <string name="keySchool">school</string>
+    <string name="keyStaff">staff</string>
+    <string name="keyStandards">standards</string>
+
+    <string name="keyT">t</string>
+    <string name="keyTitle">title</string>
+
+    <string name="keyU">u</string>
+    <string name="keyV">v</string>
+    <string name="keyW">w</string>
+    <string name="keyX">x</string>
+    <string name="keyY">y</string>
+    <string name="keyZ">z</string>
+
+
+    <!-- Query Filed -->
+    <string name="fieldAccessible">accessible</string>
+    <string name="fieldAccessibleAdd">accessibleAdd</string>
+    <string name="fieldAccessibleUpdate">accessibleUpdate</string>
+    <string name="fieldAccessibleDelete">accessibleDelete</string>
+    <string name="fieldAverageRating">averageRating</string>
+
+    <string name="fieldBad">bad</string>
+
+
+    <!--Firebase Field-->
+    <string name="fieldCreatedAt">createdAt</string>
+    <string name="fieldCreatedBy">createdBy</string>
+    <string name="fieldCreatedById">createdById</string>
+
+    <string name="fieldDate">date</string>
+    <string name="fieldDay">day</string>
+    <string name="fieldDivision">division</string>
+    <string name="fieldDivisionId">divisionId</string>
+    <string name="fieldDivisionIds">divisionIds</string>
+
+    <string name="fieldExcellent">excellent</string>
+
+    <string name="fieldf"></string>
+    <string name="fieldFirstName">firstName</string>
+
+    <string name="fieldGood">good</string>
+    <string name="fieldGreat">great</string>
+
+    <string name="fieldHasData">hasData</string>
+
+    <string name="fieldi"></string>
+    <string name="fieldj"></string>
+    <string name="fieldk"></string>
+
+    <string name="fieldLectureNumber">lectureNumber</string>
+    <string name="fieldLikes">likes</string>
+
+    <string name="fieldm"></string>
+
+    <string name="fieldName">name</string>
+
+    <string name="fieldo"></string>
+    <string name="fieldp"></string>
+    <string name="fieldq"></string>
+
+    <string name="fieldRating">rating</string>
+    <string name="fieldRatings">ratings</string>
+
+    <string name="fieldRole">role</string>
+
+    <string name="fieldSchoolId">schoolId</string>
+    <string name="fieldStatus">status</string>
+    <string name="fieldStatusComplaint">statusComplaint</string>
+    <string name="fieldStatusIssue">statusIssue</string>
+    <string name="fieldStatusLeave">statusLeave</string>
+    <string name="fieldStandard">standard</string>
+    <string name="fieldStandardId">standardId</string>
+    <string name="fieldStandardIds">standardIds</string>
+    <string name="fieldStop">stop</string>
+    <string name="fieldStudentId">studentId</string>
+    <string name="fieldStudentIds">studentIds</string>
+    <string name="fieldSubjectName">subjectName</string>
+
+    <string name="fieldTerrible">terrible</string>
+    <string name="fieldTime">time</string>
+    <string name="fieldTotalLikes">totalLikes</string>
+    <string name="fieldTotalComments">totalComments</string>
+    <string name="fieldType">type</string>
+
+    <string name="fieldU"></string>
+    <string name="fieldV"></string>
+    <string name="fieldW"></string>
+    <string name="fieldX"></string>
+    <string name="fieldY"></string>
+    <string name="fieldZ"></string>
+
+    <!--Firebase Field-->
+    <string name="fieldDocumentId">documentId</string>
+    <string name="fieldDateOf">dateOf</string>
+    <string name="fieldItem">item</string>
+    <string name="fieldUnit">unit</string>
+    <string name="fieldSite">site</string>
+
+    <array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </array>
+
+    <array name="timeTable">
+        <item>Add Subject</item>
+        <item>Add Break</item>
+    </array>
+
+    <array name="statusComplaint">
+        <item>Pending</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Closed</item>
+    </array>
+
+    <array name="statusIssue">
+        <item>Open</item>
+        <item>In Progress</item>
+        <item>Resolved</item>
+        <item>Closed</item>
+        <item>Reopened</item>
+        <item>Postponed</item>
+    </array>
+
+    <array name="statusLeave">
+        <item>Pending</item>
+        <item>Accepted</item>
+        <item>Rejected</item>
+    </array>
+
+    <array name="lectureNumber">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+        <item>"13"</item>
+        <item>"14"</item>
+        <item>"15"</item>
+    </array>
+
+    <array name="questionType">
+        <item>Objective</item>
+        <item>Descriptive</item>
+    </array>
+
+    <array name="questionLevel">
+        <item>low</item>
+        <item>medium</item>
+        <item>hard</item>
+    </array>
+
+    <array name="countryName">
+        <item>India</item>
+    </array>
+
+    <array name="countryCode">
+        <item>India</item>
+    </array>
+
+    <string name="title_activity_maps">Map</string>
+
+    <string name="betaTakePhoto">Take Photo</string>
+    <string name="betaTextRecog">Text Recognition</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

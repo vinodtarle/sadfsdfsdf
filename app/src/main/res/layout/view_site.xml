@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="site"
+            type="com.construction.app.site.model.Site" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/spacing2x"
+        android:paddingTop="@dimen/spacing1x"
+        android:paddingEnd="@dimen/spacing2x"
+        android:paddingBottom="@dimen/spacing1x">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextLeading"
+            android:text="@{site.name}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/FinePrint"
+            android:layout_weight="1"
+            android:text="@{site.contact}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/FinePrintSubtle"
+            android:text="@{site.address}" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

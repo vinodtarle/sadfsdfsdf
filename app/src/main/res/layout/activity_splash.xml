@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatchParent"
+    android:background="@color/white"
+    tools:context=".base.view.ActivitySplash">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/LayoutWrapContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFrom"
+        style="@style/FinePrintSubtle"
+        android:layout_marginBottom="@dimen/spacingHalf"
+        android:gravity="center"
+        android:text="@string/strFrom"
+        app:layout_constraintBottom_toTopOf="@+id/tvAppOwner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppOwner"
+        style="@style/FinePrint"
+        android:layout_marginBottom="@dimen/spacing3x"
+        android:gravity="center"
+        android:text="@string/strOwnerName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

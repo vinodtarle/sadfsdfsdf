@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="payment"
+            type="com.construction.app.payment.model.Payment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/spacing2x"
+        android:paddingTop="@dimen/spacing1x"
+        android:paddingEnd="@dimen/spacing2x"
+        android:paddingBottom="@dimen/spacing1x">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName"
+            style="@style/TextLeading"
+            android:text="@{payment.site != null ? payment.site.name : payment.supplier.name }"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDate"
+            style="@style/FinePrint"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/spacingHalf"
+            android:text="@{payment.date}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtStatus"
+            style="@style/FinePrint"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/spacingHalf"
+            android:text="@{payment.paymentType}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtAmount"
+            style="@style/TextLeading"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/spacingHalf"
+            android:text="@{payment.amount}"
+            android:textColor='@{payment.paymentStatus.equals("Received") ? @color/colorIncome : @color/colorExpense}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStatus" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDescription"
+            style="@style/FinePrintSubtle"
+            android:layout_marginTop="@dimen/spacingHalf"
+            android:text="@{payment.description}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStatus" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

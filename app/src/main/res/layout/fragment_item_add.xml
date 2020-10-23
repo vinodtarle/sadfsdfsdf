@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".item.view.FragmentItemAdd">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="ui"
+            type="com.construction.app.item.view.UI" />
+
+        <variable
+            name="item"
+            type="com.construction.app.item.model.Item" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutMatchParent.Padding"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSelection"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout"
+                android:layout_weight="1"
+                app:counterEnabled="true"
+                app:counterMaxLength="@string/limitMaxItem">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edItem"
+                    style="@style/TextInputEditText"
+                    android:hint="@string/hintItemName"
+                    android:inputType="textCapWords"
+                    android:maxLength="@string/limitMaxItem"
+                    android:singleLine="true"
+                    android:text="@={item.name}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCancel"
+                style="@style/LayoutWrapContent"
+                android:padding="@dimen/spacingHalf"
+                android:visibility="@{ui.update ? View.VISIBLE : View.GONE}"
+                app:srcCompat="@drawable/ic_cancel" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/RecyclerView"
+            android:layout_weight="1" />
+
+        <com.construction.app.base.utility.button.ActionButton
+            android:id="@+id/buttonAdd"
+            style="@style/LayoutSection"
+            android:text="@string/buttonAdd"
+            app:actionButtonType="MediumEmphasis"
+            app:layout_constraintTop_toBottomOf="@+id/layoutDescription" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    Style attributes for action button-->
+    <declare-styleable name="ActionButton">
+        <attr name="actionButtonType" format="enum">
+            <enum name="HighEmphasis" value="0" />
+            <enum name="MediumEmphasis" value="1" />
+            <enum name="LowEmphasis" value="2" />
+            <enum name="Destructive" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

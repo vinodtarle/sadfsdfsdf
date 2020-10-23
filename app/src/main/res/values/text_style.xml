@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HeadingDisplay" parent="font.emphasis40">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="HeadingA" parent="font.emphasis32">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="HeadingB" parent="font.emphasis24">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="HeadingBMinimal" parent="font.minimal24">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="HeadingC" parent="font.emphasis20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="HeadingD" parent="font.emphasis16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="SubHeadline" parent="font.essential14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextDisplay" parent="font.minimal40">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="TextLeading" parent="font.minimal20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.23</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="TextBody" parent="font.minimal16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.22</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="FinePrint" parent="font.essential14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.22</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="FinePrintSubtle" parent="font.essential14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.22</item>
+        <item name="android:textColor">@color/textTertiary</item>
+    </style>
+</resources>

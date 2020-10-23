@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/interactiveBackgroundActive">
+
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="@dimen/buttonRadius" />
+        </shape>
+    </item>
+
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/buttonRadius" />
+                    <stroke
+                        android:width="@dimen/buttonBorderWidth"
+                        android:color="@color/interactiveForegroundActive" />
+                </shape>
+            </item>
+            <item android:state_focused="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/interactiveBackgroundActive" />
+                    <corners android:radius="@dimen/buttonRadius" />
+                    <stroke
+                        android:width="@dimen/buttonBorderWidth"
+                        android:color="@color/interactiveForegroundActive" />
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/transparent" />
+                    <corners android:radius="@dimen/buttonRadius" />
+                    <stroke
+                        android:width="@dimen/buttonBorderWidth"
+                        android:color="@color/interactiveForegroundDisabled" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/interactiveBackgroundNormal" />
+                    <corners android:radius="@dimen/buttonRadius" />
+                    <stroke
+                        android:width="@dimen/buttonBorderWidth"
+                        android:color="@color/interactiveForegroundNormal" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

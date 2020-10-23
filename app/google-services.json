@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "342624617",
+    "firebase_url": "https://my-construction-7c856.firebaseio.com",
+    "project_id": "my-construction-7c856",
+    "storage_bucket": "my-construction-7c856.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342624617:android:0f78e94fb5c9ff78e7d5f8",
+        "android_client_info": {
+          "package_name": "com.construction.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342624617-sddna7j4rvtu82877p7pbjkk0esccc7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf4y4siLt4jBsgdqTFebNFwbpM_tdzJTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342624617-sddna7j4rvtu82877p7pbjkk0esccc7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

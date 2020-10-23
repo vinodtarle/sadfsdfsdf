@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing1nHalf">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FinePrint"
+                android:layout_weight="1"
+                android:text="dfsdf"
+                android:textColor="@color/colorTextDark" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_rupee" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--android:tint='@{transaction.category.equals("Income") ? @color/colorIncome : @color/colorExpense}'-->
+
+        <androidx.appcompat.widget.LinearLayoutCompat style="@style/LayoutSection">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FinePrint"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="sdfsdfsdf sdf sdf" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FinePrint"
+                android:layout_width="wrap_content"
+                android:text="sdfsdfs f" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--android:textColor='@{transaction.category.equals("Income") ? @color/colorIncome : @color/colorExpense}'-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/FinePrint"
+            android:text="sdf"
+            android:textColor="@color/colorTextLite" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

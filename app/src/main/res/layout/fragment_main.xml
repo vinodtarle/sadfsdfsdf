@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatchParent"
+    android:background="@color/gray_200"
+    tools:context=".base.view.FragmentMain">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ivBanner"
+        style="@style/LayoutSection"
+        android:minHeight="@dimen/landing_image_min"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="anim_construction.json"
+        app:lottie_loop="false" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/site"
+        style="@style/LayoutSection"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_margin="@dimen/spacing1x"
+        app:layout_constraintBottom_toTopOf="@id/supplier"
+        app:layout_constraintEnd_toStartOf="@+id/payment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImageView"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:srcCompat="@drawable/ic_site"
+                app:tint="@color/red" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/SubHeadline"
+                android:layout_marginBottom="@dimen/spacing1x"
+                android:gravity="center_horizontal"
+                android:text="@string/strSite" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/payment"
+        style="@style/LayoutSection"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_margin="@dimen/spacing1x"
+        app:layout_constraintBottom_toTopOf="@id/material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/site">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImageView"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:srcCompat="@drawable/ic_rupee"
+                app:tint="@color/green" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/SubHeadline"
+                android:layout_marginBottom="@dimen/spacing1x"
+                android:gravity="center_horizontal"
+                android:text="@string/strPayment" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/supplier"
+        style="@style/LayoutSection"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_margin="@dimen/spacing1x"
+        app:layout_constraintBottom_toTopOf="@id/labour"
+        app:layout_constraintEnd_toStartOf="@+id/material"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImageView"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:srcCompat="@drawable/ic_supplier"
+                app:tint="@color/yellow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/SubHeadline"
+                android:layout_marginBottom="@dimen/spacing1x"
+                android:gravity="center_horizontal"
+                android:text="@string/strSupplier" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material"
+        style="@style/LayoutSection"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_margin="@dimen/spacing1x"
+        app:layout_constraintBottom_toTopOf="@id/attendance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/supplier">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImageView"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:srcCompat="@drawable/ic_cart"
+                app:tint="@color/orange" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/SubHeadline"
+                android:layout_marginBottom="@dimen/spacing1x"
+                android:gravity="center_horizontal"
+                android:text="@string/strMaterial" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/labour"
+        style="@style/LayoutSection"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_margin="@dimen/spacing1x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/attendance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImageView"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:srcCompat="@drawable/ic_person"
+                app:tint="@color/blue" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/SubHeadline"
+                android:layout_marginBottom="@dimen/spacing1x"
+                android:gravity="center_horizontal"
+                android:text="@string/strLabour" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/attendance"
+        style="@style/LayoutSection"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_margin="@dimen/spacing1x"
+        android:layout_marginBottom="@dimen/spacing2x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labour">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImageView"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:srcCompat="@drawable/ic_calender"
+                app:tint="@color/colorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/SubHeadline"
+                android:layout_marginBottom="@dimen/spacing1x"
+                android:gravity="center_horizontal"
+                android:text="@string/strAttendance" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
